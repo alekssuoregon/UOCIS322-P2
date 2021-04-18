@@ -1,5 +1,5 @@
 FROM python:3.8
-MAINTAINER John Doe "noemail@website.domain"
+MAINTAINER Aleksandr Stevens "alekss@uoregon.edu"
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
