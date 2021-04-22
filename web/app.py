@@ -12,7 +12,6 @@ DOCROOT = ""
 @app.route("/<path:path>")
 def serve_file(path):
     full_path = os.path.join(DOCROOT, path)
-    print(path)
     if any(forbidden_value in path for forbidden_value in ("~", "..", "//")):
         abort(403)
     elif not path.endswith((".html", ".css")):
